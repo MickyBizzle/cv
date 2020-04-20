@@ -5,7 +5,7 @@
       CV - Michael Ballard
     </title>
 
-    <base href="https://mickybizzle.github.io/cv/" />
+    <!-- <base href="https://mickybizzle.github.io/cv/" /> -->
 
     <!-- Meta -->
     <meta charset="utf-8" />
@@ -33,8 +33,11 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/devresume.css" />
   </head>
 
+  <!-- rgb(133, 189, 191) -->
+
   <body>
     <div class="main-wrapper">
+      <div style="margin-top:3em"><h5 style="text-align:center"><a href="cv.pdf" download>Download a copy</a></h5></div>
       <div class="container px-3 px-lg-5">
         <article
           class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg"
@@ -125,7 +128,7 @@
                       <div
                         class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right"
                       >
-                        Vodafone | December 2019 - Present
+                        <a href="https://www.vodafone.com" target="_blank" style="color: #e60000; font-weight: bold">Vodafone</a> | December 2019 - Present
                       </div>
                     </div>
                     <div class="item-content">
@@ -158,16 +161,16 @@
                       <h4
                         class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0"
                       >
-                        Solutions Engineer | IoT
+                        Solutions Engineer - IoT
                       </h4>
                       <div
                         class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right"
                       >
-                        Vodafone | September 2019 - Present
+                      <a href="https://www.vodafone.com" target="_blank" style="color: #e60000; font-weight: bold">Vodafone</a> | September 2019 - Present
                       </div>
                     </div>
                     <div class="item-content">
-                      <!-- <p>
+                      <!-- <a>
                         As a solutions engineer, I have been involved in a lot of aspects of development and technology. I have programmed IoT applications mainly using JavaScript, as well as integrating with 3rd party APIs to expand the feature set of our platform. I have also 
                       </!-->
                       <ul class="resume-list">
@@ -197,12 +200,12 @@
                       <h4
                         class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0"
                       >
-                        Automation Developer | Big Data Platforms & Services
+                        Automation Developer - Big Data Platforms & Services
                       </h4>
                       <div
                         class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right"
                       >
-                        Vodafone | April - September 2019
+                      <a href="https://www.vodafone.com" target="_blank" style="color: #e60000; font-weight: bold">Vodafone</a> | April - September 2019
                       </div>
                     </div>
                     <div class="item-content">
@@ -234,12 +237,12 @@
                       <h4
                         class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0"
                       >
-                        PPMO Coordinator
+                        PPMO Coordinator - Vodafone Business
                       </h4>
                       <div
                         class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right"
                       >
-                        Vodafone | September 2018 - March 2019
+                      <a href="https://www.vodafone.com" target="_blank" style="color: #e60000; font-weight: bold">Vodafone</a> | September 2018 - March 2019
                       </div>
                     </div>
                     <div class="item-content">
@@ -272,7 +275,7 @@
 										<div
 											class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right"
 										>
-											Gloversure | August 2016 - May 2017
+											<a href="https://gloversure.co.uk" target="_blank" style="color: #ee4036;font-weight:bold">Gloversure</a> | August 2016 - May 2017
 										</div>
 									</div>
 									<div class="item-content">
@@ -467,5 +470,15 @@
       </footer>
     </div>
     <!--//main-wrapper-->
+
+    <!-- Google recpatcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6Ldf7esUAAAAAApMeBOhKRRa7B9pCiNFiSPT0TH3', {action: 'homepage'}).then(function(token) {
+       console.log("passed")
+    });
+});
+</script>
   </body>
 </html>
