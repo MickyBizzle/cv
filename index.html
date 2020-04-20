@@ -36,11 +36,9 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6Ldf7esUAAAAAApMeBOhKRRa7B9pCiNFiSPT0TH3"></script>
   </head>
 
-  <!-- rgb(133, 189, 191) -->
-
   <body>
     <div class="main-wrapper">
-      <div style="margin-top:3em"><h5 style="text-align:center"><a href="cv.pdf" download>Download a copy</a></h5></div>
+      <div style="margin-top:3em"><h5 style="text-align:center"><a href="" onclick="downloadFile()" >Download a copy</a></h5></div>
       <div class="container px-3 px-lg-5">
         <article
           class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg"
@@ -477,9 +475,11 @@
     
 <script>
 grecaptcha.ready(function() {
+  function downloadFile() {
     grecaptcha.execute('6Ldf7esUAAAAAApMeBOhKRRa7B9pCiNFiSPT0TH3', {action: 'homepage'}).then(function(token) {
        console.log("passed")
     });
+  }
 });
 </script>
   </body>
